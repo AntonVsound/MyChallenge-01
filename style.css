@@ -12,73 +12,181 @@
 }
 
 body {
+
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     background-color: var(--White);
     box-sizing: border-box;
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
+    
+
 }
 
-.flex-title {
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.info {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .title {
     color: var(--Very-Dark-Magenta);
-    font-size: 30px;
+    font-size: 25px;
+    text-align: left;
+
 }
 
-.sub-title{
-    
+.sub-title {
+    color: var(--Dark-Grayish-Magentak);
+
 }
 
-.flex-rate {
-
-    position: relative;
-    bottom: 255px;
-    right: 100px;
-    color: var(--Very-Dark-Magenta);
-    font-weight: 500;
+.rates{
+    display: grid;
+    grid-row-gap: 10px;
+    margin-top: 90px;
     
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-content: space-between;
-    border-radius: 20%;
-
 
 }
 
 .rate-item-01 {
+    display: flex;
+
     background-color: var(--Light-Grayish-Magenta);
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-    right: 120px;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    padding: 8px;
+    border-radius: 15px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 500;
+
+
+}
+
+.rate-info-01 {
+   padding-left: 50px;
 }
 
 .rate-item-02 {
+    display: flex;
     background-color: var(--Light-Grayish-Magenta);
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-    right: 50px;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    padding: 8px;
+    border-radius: 15px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.rate-info-02 {
+    padding-left: 50px;
 }
 
 .rate-item-03 {
+    display: flex;
     background-color: var(--Light-Grayish-Magenta);
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-    left: 20px;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    padding: 8px;
+    border-radius: 15px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 500;
+    margin-left: 80px;
 }
+
+.rate-info-03 {
+    padding-left: 50px;
+}
+
+.cards{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding-top:100px; 
+    margin: 0;
+}
+
+.card-01 {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 1%;
+    padding: 20px;
+    display: grid;
+    width: 400px;
+}
+
+.card-pic-01{
+    border-radius: 50%; 
+}
+
+.card-01-name {
+    color: var(--White);
+    float: right;
+}
+
+.cards-verified {
+    color: var(--Soft-Pink);
+    float: right;
+}
+
+.card-01-info{
+    color: var(--White);
+
+}
+
+.card-02 {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 1%;
+    padding: 20px;
+    display: grid;
+    width: 400px;
+}
+
+.card-pic-02 {
+    border-radius: 50%;
+}
+
+.card-02-name {
+    color: var(--White);
+    float: right;
+}
+
+
+.card-02-info {
+    color: var(--White);
+}
+
+.card-03 {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 1%;
+    padding: 20px;
+    display: grid;
+    width: 400px;
+}
+
+.card-pic-03 {
+    border-radius: 50%;
+}
+
+.card-03-name {
+    color: var(--White);
+    float: right;
+}
+
+.card-03-info {
+    color: var(--White);
+}
+
+
 
 
 
